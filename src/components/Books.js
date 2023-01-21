@@ -6,7 +6,7 @@ function Books() {
   return (
     <>
       <div className="books-shelf">
-        <Book title="My Book" author="Me" />
+        <Book title="My Book" author="Tonny" />
       </div>
       <AddNewBook />
     </>
