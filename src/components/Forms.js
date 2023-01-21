@@ -1,12 +1,11 @@
-import './Books.css';
-
-function Forms() {
+function AddNewBook() {
   return (
-    <form className="forms">
-      <input type="text" name="author" placeholder="Author" />
-      <input type="text" name="book" placeholder="Book" />
-      <input type="submit" value="Submit" />
+    <form>
+      <input type="text" placeholder="Book Title" />
+      <input type="text" placeholder="Book Author" />
+      <button type="submit">ADD BOOK</button>
     </form>
   );
 }
-export default Forms;
+
+export default AddNewBook;
