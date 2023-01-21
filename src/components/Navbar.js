@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom';
-import './Books.css';
 
-function Navbar() {
+function Header() {
   return (
-    <nav>
-      <ul className="nav-content">
-        <li>Bookstore CMS</li>
-        <li><Link to="/">BOOKS</Link></li>
-        <li><Link to="/Category">CATEGORY</Link></li>
-      </ul>
-    </nav>
+    <div className="nav-links">
+      <Link to="/">Books</Link>
+      <Link to="/categories">Categories</Link>
+    </div>
   );
 }
-export default Navbar;
+
+export default Header;
