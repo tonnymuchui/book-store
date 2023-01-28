@@ -1,27 +1,212 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto+Slab:wght@100;200;300;400&display=swap");
+
+
+* {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    "Roboto",
-    "Oxygen",
-    "Ubuntu",
-    "Cantarell",
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    "Courier New",
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #fff;
+}
+
+.nav-bar div {
+  margin: 0 30px;
+}
+
+.nav-bar h2 {
+  color: #0290ff;
+}
+
+.nav-bar a {
+  font-weight: 700;
+  margin: 10px;
+  text-decoration: none;
+  color: #5c5c5c;
+}
+
+.nav-bar a:hover {
+  color: #0290ff;
+}
+
+.book-shelf {
+  margin: 25px 10%;
+}
+
+.book-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  margin: 30px 0;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.book-list * {
+  background-color: #fff;
+}
+
+.book-list h2 {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  font-family: 'Roboto', sans-serif;
+  color: #1f1f1f;
+}
+
+category {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #bcb9b9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.author {
+  color: #0290ff;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn button {
+  border: none;
+  font-weight: 500;
+  color: #4386bf;
+}
+
+.status-btn {
+  margin-top: 15px;
+  border: none;
+  font-weight: 500;
+  padding: 15px 25px;
+  margin: 200px 530px;
+  width: 20%;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #0290ff;
+  padding: auto;
+}
+
+.btn button:nth-child(2) {
+  border-left: 1px solid #c0c0c0;
+  border-right: 1px solid #c0c0c0;
+  padding: 0 10px;
+}
+
+.btn button:hover {
+  cursor: pointer;
+}
+
+.add-new-book {
+  margin: 20px 10%;
+  border-top: 1px solid #c0c0c0;
+}
+
+.add-new-book h2 {
+  margin: 30px 0;
+  color: #c2c2c2;
+}
+
+.add-new-book form {
+  display: flex;
+  gap: 15px;
+}
+
+.add-new-book input {
+  padding: 5px;
+  width: 38%;
+}
+
+.add-new-book button {
+  padding: 15px 25px;
+  width: 24%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: #0290ff;
+}
+
+.reading-preview {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+
+.pre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reading-desc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.p-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percent-complete {
+  font-size: 2.5rem;
+}
+
+.oval {
+  width:6rem;
+  height:6rem;
+  border-radius: 50%;
+  border-width: 5px;
+  border: 5px solid #0290ff;
+  border-left-color: rgb(206, 205, 205);
+  transform: rotate(45deg);
+}
+
+.reading-desc .com {
+  font-size: 0.7rem;
+  color: #c0c0c0;
+}
+
+.chapter-progress {
+  border-left: 2px solid #c0c0c0;
+  padding: 0 45px;
+}
+
+.chapter-progress h3 {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c0c0c0;
+}
+
+.chapter-progress button {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #0290ff;
 }
