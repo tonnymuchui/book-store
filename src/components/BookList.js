@@ -4,7 +4,6 @@ import Book from './Book';
 
 const BookList = (props) => {
   const { books } = props;
-
   return (
     <ul className="booklist">
       {books.map((book) => (
