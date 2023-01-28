@@ -1,16 +1,16 @@
 import React from 'react';
-import Book from './Book';
+import { useSelector } from 'react-redux';
+import BookList from './BookList';
 import AddNewBook from './Forms';
 
-function Books() {
+const Books = () => {
+  const books = useSelector((state) => state.book);
   return (
     <>
-      <div className="books-shelf">
-        <Book title="My Book" author="Me" />
-      </div>
+      <BookList books={books} />
       <AddNewBook />
     </>
   );
-}
+};
 
 export default Books;
