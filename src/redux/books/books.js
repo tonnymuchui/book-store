@@ -1,9 +1,7 @@
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
-const initState = {
-  books: [],
-};
+const initState = [];
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
