@@ -66,7 +66,7 @@ body {
   color: #1f1f1f;
 }
 
-category {
+.category {
   font-size: 0.9rem;
   font-weight: 600;
   color: #bcb9b9;
@@ -90,7 +90,6 @@ category {
 }
 
 .status-btn {
-  margin-top: 15px;
   border: none;
   font-weight: 500;
   padding: 15px 25px;
@@ -101,17 +100,6 @@ category {
   font-size: 1.8rem;
   color: #fff;
   background-color: #0290ff;
-  padding: auto;
-}
-
-.btn button:nth-child(2) {
-  border-left: 1px solid #c0c0c0;
-  border-right: 1px solid #c0c0c0;
-  padding: 0 10px;
-}
-
-.btn button:hover {
-  cursor: pointer;
 }
 
 .add-new-book {
@@ -208,4 +196,14 @@ category {
   border-radius: 4px;
   color: #fff;
   background-color: #0290ff;
+}
+
+.btn button:nth-child(2) {
+  border-left: 1px solid #c0c0c0;
+  border-right: 1px solid #c0c0c0;
+  padding: 0 10px;
+}
+
+.btn button:hover {
+  cursor: pointer;
 }
