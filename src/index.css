@@ -23,7 +23,7 @@ body {
 }
 
 .nav-bar div {
-  margin: 0 30px;
+  margin: 0 31px;
 }
 
 .nav-bar h2 {
@@ -193,7 +193,7 @@ body {
   margin: 10px 0;
   padding: 10px 25px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   color: #fff;
   background-color: #0290ff;
 }
