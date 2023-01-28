@@ -8,8 +8,7 @@ function Books() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBooks());
-    // eslint-disable-next-line
-  }, []);
+  }, [dispatch]);
   const books = useSelector((state) => state.handleBook.entities);
   return (
     <>
